@@ -37,7 +37,7 @@ export default function GlassMapContact() {
 
     const data = Object.fromEntries(new FormData(e.target));
 
-    const res = await fetch("http://localhost:5000/api/contact", {
+    const res = await fetch("https://threed-portfolio-backend-5j47.onrender.com/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
